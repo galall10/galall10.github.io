@@ -7,84 +7,224 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Hero Section -->
-  <header class="hero">
-    <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic">
-    <h1>Mohamed Ahmed Galal</h1>
-    <p>AI/ML Software Engineer</p>
-    <div class="links">
-      <a href="mailto:muhammadgalal09@gmail.com">Email</a> |
-      <a href="https://github.com/galall10" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/mohamedgalal10" target="_blank">LinkedIn</a>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <img src="assets/profile.jpg" alt="Profile Photo" class="profile-pic">
+        <h1>Mohamed Ahmed Galal</h1>
+        <p class="subtitle">AI/ML Software Engineer</p>
+        <p class="location">📍 6 October City, Egypt</p>
+        <div class="hero-links">
+          <a href="mailto:muhammadgalal09@gmail.com">✉️ Email</a>
+          <a href="https://github.com/galall10" target="_blank">💻 GitHub</a>
+          <a href="https://linkedin.com/in/mohamedgalal10" target="_blank">💼 LinkedIn</a>
+          <a href="tel:+201025017460">📱 Phone</a>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">👨‍💻 About Me</h2>
+      <div class="about-content">
+        <p>Software Engineer with hands-on experience in real-world projects and freelance work. Proven expertise in building intelligent systems using LLMs, RAG, and computer vision techniques. Successfully developed an AI-powered civil engineering assistant and implemented object detection models for competitive platforms. Strong background in backend development with Spring Boot and Flask, and a solid understanding of model deployment, and API integration.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Projects Section -->
-  <section class="section">
-    <h2>🚀 Featured Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="assets/civil_ai.png" alt="Smart Civil Engineering Assistant">
-        <h3>Smart Civil Engineering Assistant</h3>
-        <p>AI assistant to assess building code compliance using LLMs + RAG + Vision-Language Models.</p>
-        <div class="badges">Python | Flask | LangChain | Hugging Face</div>
-        <a href="#" class="btn">View Project</a>
-      </div>
+  <section class="section" style="background: #f8fafc;">
+    <div class="container">
+      <h2 class="section-title">🚀 Featured Projects</h2>
+      <p class="section-subtitle">Showcase of my latest AI/ML projects and applications</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">🏗️</div>
+          <div class="project-card-content">
+            <h3>Smart Civil Engineering Assistant</h3>
+            <p>AI assistant to assess building code compliance by analyzing construction site images. Utilizes vision-language models to generate structured photo descriptions and identify potential violations with Saudi Arabian Building Code.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">LangChain</span>
+              <span class="tech-badge">Hugging Face</span>
+              <span class="tech-badge">OpenRouter</span>
+            </div>
+            <div class="project-period">June 2025 – Present</div>
+            <button class="project-btn">View Project</button>
+          </div>
+        </div>
 
-      <div class="project-card">
-        <img src="assets/object_detection.png" alt="Object Detection Project">
-        <h3>Object Detection – Kaggle Project</h3>
-        <p>YOLOv8 for object detection with transfer learning and hyperparameter tuning.</p>
-        <div class="badges">Python | PyTorch | OpenCV</div>
-        <a href="#" class="btn">View Project</a>
-      </div>
+        <div class="project-card">
+          <div class="project-image">🎯</div>
+          <div class="project-card-content">
+            <h3>Object Detection – Kaggle Competition</h3>
+            <p>Applied transfer learning on YOLOv8 for object detection in competitive environment. Tuned hyperparameters to optimize model performance and iteratively improved accuracy under competition constraints.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">PyTorch</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">YOLOv8</span>
+            </div>
+            <div class="project-period">June 2025</div>
+            <button class="project-btn">View Project</button>
+          </div>
+        </div>
 
-      <div class="project-card">
-        <img src="assets/trip_planner.png" alt="Trip Planner Website">
-        <h3>Trip Planner Website</h3>
-        <p>AI itinerary generator using K-Means and Google Places API for route planning.</p>
-        <div class="badges">Python | Flask | Scikit-learn | Docker</div>
-        <a href="#" class="btn">View Project</a>
+        <div class="project-card">
+          <div class="project-image">🗺️</div>
+          <div class="project-card-content">
+            <h3>Trip Planner Website</h3>
+            <p>AI-powered itinerary generator using K-Means clustering and Google Places API for route planning. Features dynamic filters with category/price preferences and cluster-based recommendation engine.</p>
+            <div class="tech-badges">
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">Google Places API</span>
+              <span class="tech-badge">Docker</span>
+            </div>
+            <div class="project-period">July 2024</div>
+            <button class="project-btn">View Project</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Experience Section -->
   <section class="section">
-    <h2>💼 Experience</h2>
-    <ul>
-      <li><b>AI Trainee</b> – NTI Advanced AI Track (2025–Present)<br>Built CV projects with YOLO and Vision Transformers; trained in MLOps and model deployment.</li>
-      <li><b>AI/ML Engineer & Backend Developer</b> – Freelance (2025–Present)<br>Developed a Smart Civil Engineering Assistant and backend CRM with Spring Boot and Flask.</li>
-      <li><b>Backend Developer Intern</b> – Sadeem Knowledge (2024–2025)<br>Built scalable REST APIs using Spring Boot.</li>
-    </ul>
+    <div class="container">
+      <h2 class="section-title">💼 Professional Experience</h2>
+      <p class="section-subtitle">My journey in AI/ML and software development</p>
+      
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <h3>AI Trainee – Advanced AI Track</h3>
+          <div class="company">National Telecommunication Institute (NTI), Egypt</div>
+          <div class="period">July 2025 – Present</div>
+          <p>Training in advanced Computer Vision, including object detection, segmentation, and vision transformers using PyTorch, TensorFlow, and OpenCV. Building and deploying end-to-end CV projects covering data engineering, model development, evaluation, and MLOps practices. Training in communication, project management, leadership, and business English for international tech settings.</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>AI/ML Engineer & Backend Developer</h3>
+          <div class="company">Freelance</div>
+          <div class="period">June 2025 – Present</div>
+          <p>Developing Smart Civil Engineering Assistant to analyze construction images using LLMs and check for compliance with Saudi Arabian Building Code. Using Vision-Language Models and implementing RAG for regulatory standards comparison. Built and deployed backend of CRM system with user authentication, role-based access, and client assignment features.</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>AI Trainee</h3>
+          <div class="company">NTI & Huawei, Egypt</div>
+          <div class="period">May 2025 – June 2025</div>
+          <p>Completed intensive training in machine learning and deep learning. Participated in Kaggle competition focused on object detection using Python and PyTorch. Gained hands-on experience in model development, data pre-processing, and evaluation.</p>
+        </div>
+
+        <div class="experience-item">
+          <h3>Backend Developer Intern</h3>
+          <div class="company">Sadeem Knowledge, Egypt</div>
+          <div class="period">Dec 2024 – Mar 2025</div>
+          <p>Developed and maintained back-end services using Spring Boot. Built RESTful APIs ensuring system scalability and security. Worked with diverse teams to ensure successful delivery of software solutions.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="section">
-    <h2>🛠 Skills</h2>
-    <p>
-      <b>Programming:</b> Python, Java, C++, SQL <br>
-      <b>ML:</b> Scikit-learn, TensorFlow, PyTorch, OpenCV <br>
-      <b>Frameworks & Tools:</b> Flask, Spring Boot, LangChain, Hugging Face <br>
-      <b>Databases:</b> PostgreSQL, MySQL, MongoDB <br>
-      <b>DevOps & Cloud:</b> Docker, Git, CI/CD, Linux
-    </p>
+  <section class="section" style="background: #f8fafc;">
+    <div class="container">
+      <h2 class="section-title">🛠️ Technical Skills</h2>
+      <p class="section-subtitle">My technical expertise across various domains</p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frameworks & Architectures</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>DevOps & Cloud</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education & Contact -->
   <section class="section">
-    <h2>🎓 Education</h2>
-    <p><b>B.Sc. in Computer Science</b> – Cairo University (July 2024)<br>
-    NTI Advanced AI Track (2025)</p>
+    <div class="container">
+      <div class="info-cards">
+        <div class="info-card">
+          <h3>🎓 Education</h3>
+          <div class="education-item">
+            <h4>Bachelor's Degree in Computer Science</h4>
+            <p>Cairo University, Egypt</p>
+            <div class="period">July 2024</div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>📬 Get In Touch</h3>
+          <p>Let's connect and discuss opportunities in AI/ML</p>
+          <div class="contact-info">
+            <p>📧 muhammadgalal09@gmail.com</p>
+            <p>📱 +20 1025017460</p>
+            <p>📍 6 October City, Egypt</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:muhammadgalal09@gmail.com">Email</a>
+            <a href="https://github.com/galall10" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/mohamedgalal10" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
-  <!-- Contact Section -->
-  <footer class="section">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:muhammadgalal09@gmail.com">muhammadgalal09@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/galall10" target="_blank">galall10</a> | LinkedIn: <a href="https://linkedin.com/in/mohamedgalal10" target="_blank">mohamedgalal10</a></p>
-  </footer>
-
 </body>
 </html>
